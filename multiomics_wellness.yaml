@@ -293,7 +293,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('PUBCHEM.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.PUBCHEM_COMPOUND", "subject.type"]}
     UniProtKB-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -394,7 +394,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('EFO') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.EFO", "subject.type"]}
     UniProtKB-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -470,7 +470,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UMLS') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.UMLS", "subject.type"]}
     CHEBI-CHEBI:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.CHEBI
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.CHEBI
       - useTemplating: True
         outputs:
           - id: CHEBI
@@ -521,7 +521,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('CAS') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.CAS", "object.type"]}
     CHEBI-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -672,7 +672,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.NCIT", "subject.type"]}
     NCIT-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -698,7 +698,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.NCIT", "object.type"]}
     CHEBI-UMLS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.UMLS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.UMLS
       - useTemplating: True
         outputs:
           - id: UMLS
@@ -749,7 +749,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UniProtKB') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.UniProtKB", "subject.type"]}
     LOINC-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -800,7 +800,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('EFO') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.EFO", "subject.type"]}
     LOINC-CAS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.CAS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.CAS
       - useTemplating: True
         outputs:
           - id: CAS
@@ -876,7 +876,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.NCIT", "object.type"]}
     CAS-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -952,7 +952,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('KEGG.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.KEGG_COMPOUND", "subject.type"]}
     NCIT-CHEBI:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.CHEBI
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.CHEBI
       - useTemplating: True
         outputs:
           - id: CHEBI
@@ -1028,7 +1028,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('HMDB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.HMDB", "subject.type"]}
     LOINC-NCIT:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.NCIT
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.NCIT
       - useTemplating: True
         outputs:
           - id: NCIT
@@ -1054,7 +1054,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('LOINC') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["subject.LOINC", "object.type"]}
     CAS-CAS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.CAS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.CAS
       - useTemplating: True
         outputs:
           - id: CAS
@@ -1080,7 +1080,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('CAS') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.CAS", "object.type"]}
     NCIT-UniProtKB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.UniProtKB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.UniProtKB
       - useTemplating: True
         outputs:
           - id: UniProtKB
@@ -1206,7 +1206,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('HMDB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.HMDB", "subject.type"]}
     UniProtKB-UniProtKB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.UniProtKB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.UniProtKB
       - useTemplating: True
         outputs:
           - id: UniProtKB
@@ -1257,7 +1257,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UMLS') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.UMLS", "subject.type"]}
     EFO-UMLS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.UMLS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.UMLS
       - useTemplating: True
         outputs:
           - id: UMLS
@@ -1333,7 +1333,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('CAS') | wrap( '["', '","biolink:Protein"]' ) }} ],
             "scopes": ["object.CAS", "subject.type"]}
     EFO-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -1684,7 +1684,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('PUBCHEM.COMPOUND') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.PUBCHEM_COMPOUND", "subject.type"]}
     NCIT-NCIT:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.NCIT
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.NCIT
       - useTemplating: True
         outputs:
           - id: NCIT
@@ -1710,7 +1710,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["subject.NCIT", "object.type"]}
     NCIT-CAS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.CAS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.CAS
       - useTemplating: True
         outputs:
           - id: CAS
@@ -1736,7 +1736,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.NCIT", "object.type"]}
     LOINC-CHEBI:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.CHEBI
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.CHEBI
       - useTemplating: True
         outputs:
           - id: CHEBI
@@ -1837,7 +1837,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('CHEBI') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.CHEBI", "subject.type"]}
     EFO-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.EFO AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -2038,7 +2038,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('PUBCHEM.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.PUBCHEM_COMPOUND", "subject.type"]}
     HMDB-UMLS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.HMDB AND _exists_:object.UMLS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.HMDB AND _exists_:object.UMLS
       - useTemplating: True
         outputs:
           - id: UMLS
@@ -2189,7 +2189,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UMLS') | wrap( '["', '","biolink:Protein"]' ) }} ],
             "scopes": ["object.UMLS", "subject.type"]}
     UniProtKB-CAS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.CAS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.CAS
       - useTemplating: True
         outputs:
           - id: CAS
@@ -2215,7 +2215,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UniProtKB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.UniProtKB", "object.type"]}
     NCIT-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.NCIT AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -2316,7 +2316,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('HMDB') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.HMDB", "subject.type"]}
     LOINC-LOINC:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.LOINC
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.LOINC
       - useTemplating: True
         outputs:
           - id: LOINC
@@ -2342,7 +2342,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('LOINC') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["subject.LOINC", "object.type"]}
     LOINC-UniProtKB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.UniProtKB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.UniProtKB
       - useTemplating: True
         outputs:
           - id: UniProtKB
@@ -2418,7 +2418,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('KEGG.COMPOUND') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["object.KEGG_COMPOUND", "subject.type"]}
     CHEBI-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CHEBI AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -2469,7 +2469,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('PUBCHEM.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.PUBCHEM_COMPOUND", "subject.type"]}
     LOINC-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -2520,7 +2520,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('KEGG.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["object.KEGG_COMPOUND", "subject.type"]}
     LOINC-MESH:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.MESH
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.MESH
       - useTemplating: True
         outputs:
           - id: MESH
@@ -2546,7 +2546,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('LOINC') | wrap( '["', '","biolink:ClinicalFinding"]' ) }} ],
             "scopes": ["subject.LOINC", "object.type"]}
     UniProtKB-CHEBI:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.CHEBI
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.CHEBI
       - useTemplating: True
         outputs:
           - id: CHEBI
@@ -2572,7 +2572,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UniProtKB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.UniProtKB", "object.type"]}
     LOINC-UMLS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.UMLS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.LOINC AND _exists_:object.UMLS
       - useTemplating: True
         outputs:
           - id: UMLS
@@ -2623,7 +2623,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('PUBCHEM.COMPOUND') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.PUBCHEM_COMPOUND", "object.type"]}
     CAS-EFO:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.EFO
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.EFO
       - useTemplating: True
         outputs:
           - id: EFO
@@ -2649,7 +2649,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('CAS') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.CAS", "object.type"]}
     UniProtKB-UMLS:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.UMLS
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.UniProtKB AND _exists_:object.UMLS
       - useTemplating: True
         outputs:
           - id: UMLS
@@ -2675,7 +2675,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UniProtKB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.UniProtKB", "object.type"]}
     CAS-CHEBI:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.CHEBI
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.CAS AND _exists_:object.CHEBI
       - useTemplating: True
         outputs:
           - id: CHEBI
@@ -2776,7 +2776,7 @@ components:
             {"q": [ {{ queryInputs | replPrefix('UniProtKB') | wrap( '["', '","biolink:SmallMolecule"]' ) }} ],
             "scopes": ["subject.UniProtKB", "object.type"]}
     HMDB-HMDB:
-    ## https://biothings.ncats.io/multiomics_wellness_kp/query?q=_exists_:subject.HMDB AND _exists_:object.HMDB
+    ## https://biothings.transltr.io/multiomics_wellness_kp/query?q=_exists_:subject.HMDB AND _exists_:object.HMDB
       - useTemplating: True
         outputs:
           - id: HMDB
@@ -2929,7 +2929,7 @@ components:
 openapi: 3.0.3
 servers:
   - x-maturity: production
-    url: https://biothings.ncats.io/multiomics_wellness_kp
+    url: https://biothings.transltr.io/multiomics_wellness_kp
     description: ITRB Prod server
   - x-maturity: testing
     url: https://biothings.test.transltr.io/multiomics_wellness_kp
